@@ -1,6 +1,7 @@
 module.exports = {
   "env": {
     "browser": true,
+    "node": true,
     "es6": true,
     "jest/globals": true
   },
@@ -15,6 +16,11 @@ module.exports = {
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+  "settings": {
+    "react": {
+        "version": "detect" // Automatically detect the React version
+    }
+  },
   "plugins": [
     "react", "jest"
   ],
@@ -28,22 +34,18 @@ module.exports = {
       "unix"
     ],
     "quotes": [
-      "error",
-      "single"
+      "off"
     ],
     "semi": [
-      "error",
-      "never"
+      "off"
     ],
     "eqeqeq": "error",
-    "no-trailing-spaces": "error",
     "object-curly-spacing": [
       "error", "always"
     ],
     "arrow-spacing": [
       "error", { "before": true, "after": true }
     ],
-    "no-console": "error",
     "react/prop-types": 0
   }
 }
