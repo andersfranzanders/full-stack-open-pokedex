@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  test:
+  run_playwright_e2e_tests:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
